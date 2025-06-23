@@ -13,7 +13,7 @@ const Projects = () => {
       <div className="project-container">
         {mywork_data.map((work, index) => (
           <div className="project-card" key={index}>
-            {work.w_img && (
+            {work.github_link ? (
               <a
                 href={work.github_link}
                 target="_blank"
@@ -25,17 +25,25 @@ const Projects = () => {
                   className="project-image"
                 />
               </a>
+            ) : (
+              <img
+                src={work.w_img}
+                alt={work.title}
+                className="project-image"
+              />
             )}
-            <h3 className="project-title">{work.title}</h3>
+            <h3 className="project-title1">{work.title}</h3>
             <p className="project-description">{work.description}</p>
-            <a
-              href={work.github_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              View on GitHub
-            </a>
+            {work.github_link && (
+              <a
+                href={work.github_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                View on GitHub
+              </a>
+            )}
           </div>
         ))}
       </div>

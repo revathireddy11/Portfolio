@@ -104,15 +104,46 @@
         flex-direction: column;
     }
     .about-para {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 32px;
+        margin-left: 40px;
     }
     .about-skills {
         display: grid;
         margin-left: 40px;
         justify-content: center;
-        gap: 20px;
+        gap: 60px;
         grid-template-columns: repeat(2, 1fr);
         cursor: pointer;
     }
 }
+/* 
+@media(min-width: 425px) {
+    .about {
+        gap: 80px;
+        margin: 50px 50px;
+        align-items: start;
+    }
+    .about-title h1 {
+        font-size: 50px;
+        padding: 0;
+        margin-left: -10px;
+    }
+    .about-section {
+        flex-direction: column;
+    }
+    .about-para {
+        font-size: 20px;
+        line-height: 32px;
+        width: 600px;
+        margin-top: -40px;
+    }
+    .about-skills {
+        display: grid;
+        margin-left: 80px;
+        justify-content: center;
+        gap: 80px;
+        grid-template-columns: repeat(2, 1fr);
+        cursor: pointer;
+    }
+} */

@@ -60,7 +60,8 @@
 .hero-resume:hover {
     border-color: #b415ff;
 }
-@media(max-width:768px) {
+
+@media(min-width:425px) and (max-width:768px) {
     .hero img {
         margin-top: 120px;
         width: 200px;
@@ -73,6 +74,7 @@
     .hero p {
         width: 60%;
         font-size: 25px;
+        line-height: 32px;
         margin: 5px 0px;
     }
     .hero-action {
@@ -90,3 +92,44 @@
         border-radius: 40px;
     }
 }
+
+/* @media(min-width:425px) {
+    .hero img {
+        margin-top: 100px;
+        width: 200px;
+        margin-left: 250px;
+    }
+    .hero h1 {
+        margin-top: 5px;
+        margin-left: 150px;
+        width: 90%;
+        font-size: 40px;
+    }
+    .hero p {
+        width: 100%;
+        font-size: 25px;
+        margin: 5px 0px;
+        margin-left: 250px;
+    }
+    .hero-action {
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hero-connect {
+        padding: 20px 12px 20px 12px;
+        border-radius: 40px;
+        margin-left: 250px;
+        font-size: 20px;
+    }
+    .hero-resume {
+        padding: 20px 12px 20px 12px;
+        border-radius: 40px;
+        margin-left: 250px;
+        font-size: 20px;
+        text-align: center;
+    }
+} */

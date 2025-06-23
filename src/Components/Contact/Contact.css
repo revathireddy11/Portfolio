@@ -134,6 +134,9 @@
     .contact-detail img {
         width: 25px;
     }
+    .contact-right {
+        margin-top: -80px;
+    }
     .contact-right label {
         font-size: 20px;
     }
@@ -150,3 +153,4 @@
         padding: 15px 40px;
     }
 }
+
