@@ -1,18 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Projects.css'
 import mywork_data from '../../assets/mywork_data'
 import arrow_icon from '../../assets/arrow_icon.svg'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const Projects = () => {
+  useEffect(() => {
+  AOS.init({ duration: 1000 });
+}, []);
   return (
     <div id='projects' className="project">
       <div className="project-title">
-        <h1 className='gradient-text'>My Projects</h1>
+        <h1 data-aos="fade-up" className='gradient-text'>My Projects</h1>
       </div>
 
       <div className="project-container">
         {mywork_data.map((work, index) => (
-          <div className="project-card" key={index}>
+          <div data-aos="flip-left" className="project-card" key={index}>
             {work.github_link ? (
               <a
                 href={work.github_link}

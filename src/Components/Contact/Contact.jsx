@@ -1,11 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Contact.css'
 import mail_icon from '../../assets/mail_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const Contact = () => {
+  useEffect(() => {
+  AOS.init({ duration: 1000 });
+}, []);
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -34,7 +39,7 @@ const Contact = () => {
     <div id='contact' className='contact'>
       <img src="" alt="" />
       <div className="contact-title">
-        <h1 className='gradient-text'>Get in touch</h1>
+        <h1 data-aos="fade-up" className='gradient-text'>Get in touch</h1>
       </div>
       <div className="contact-section">
         <div className="contact-left">

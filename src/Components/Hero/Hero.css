@@ -51,6 +51,8 @@
     border-radius: 50px;
     border: 2px solid #fff;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .hero-connect:hover {
@@ -87,7 +89,7 @@
         padding: 20px 30px;
         border-radius: 40px;
     }
-    .hero-resume {
+    .hero-resume  {
         padding: 20px 50px;
         border-radius: 40px;
     }
